@@ -1,0 +1,15 @@
+<template name="componentsTableSorter">
+  {{#let _sortField=(./sorting.get 'sortField') _sortOrder=(./sorting.get 'sortOrder') }}
+    <a data-cy="brd-test-sorter-{{key}}" class="brd-table-sorter {{#if eq key _sortField}}text-dark{{else}}text-black-50{{/if}} text-decoration-none componentsTableSorter" href="#">
+
+      {{#if eq key _sortField}}
+        {{#if eq 'asc' _sortOrder}}
+          <i class="fas fa-sort-amount-up-alt"></i>
+        {{else}}
+          <i class="fas fa-sort-amount-up"></i>
+        {{/if}}
+      {{else}}
+        <i class="fas fa-sort-amount-up-alt"></i>
+      {{/if}} {{title}}</a>
+  {{/let}}
+</template>

@@ -1,0 +1,19 @@
+{
+  "_locale": "tr",
+  "_namespace": "globals",
+
+  "ok": "Tamam",
+  "yes": "Evet",
+  "no": "Hayır",
+
+  "swal": {
+    "verifyTitle": "Kullanıcı hesabınız doğrulanmadı!",
+    "sendVerification": "Doğrulama e-postasını tekrar gönder",
+    "verificationSentTitle": "Gönder!",
+    "verificationSentDescription": "Doğrulama e-postası gönder!",
+
+    "errorTitle": "Ops!",
+    "successful": "Başarılı",
+    "information": "Bilgi"
+  }
+}

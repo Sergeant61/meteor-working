@@ -1,0 +1,33 @@
+<template name="authPageForgotPasswordVerify">
+  <div class="authPageForgotPasswordVerify container-fluid bg-secondary">
+    <div class="d-flex flex-column flex-fill align-items-center h-100">
+
+      <div class="form-sign">
+        <h1 class="fw-bolder display-3">Reset Password</h1>
+        <p class="pb-3">Create your new password</p>
+
+        <form class="brd-loading-section">
+          <div class="form-floating">
+            <input type="password" class="form-control brd-border-bottom-unset" id="password" placeholder="*****">
+            <label for="password">Password</label>
+          </div>
+
+          <div class="form-floating">
+            <input type="password" class="form-control brd-border-top-unset" id="confirmPassword" placeholder="*****">
+            <label for="confirmPassword">Confirm Password</label>
+          </div>
+
+          <div class="d-grid gap-2 py-4">
+            <button class="btn btn-primary btn-lg" type="submit">Reset Password</button>
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <a href="/auth/sign-in" class="text-black-50 pt-3">Sign in</a>
+            <a href="/auth/sign-up" class="text-black-50 pt-3">Sign up</a>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</template>

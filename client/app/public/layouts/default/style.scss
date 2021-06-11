@@ -1,0 +1,9 @@
+.publicLayoutDefault {
+  padding-right: 10rem !important;
+  padding-left: 10rem !important;
+
+  @media (max-width: 994px) {
+    padding-right: 1rem !important;
+    padding-left: 1rem  !important;
+  }
+}

@@ -1,0 +1,290 @@
+[
+  {
+    "code": "af",
+    "text": "Afrikaans"
+  },
+  {
+    "code": "am",
+    "text": "Amharic"
+  },
+  {
+    "code": "ar",
+    "text": "Arabic"
+  },
+  {
+    "code": "az",
+    "text": "Azerbaijani"
+  },
+  {
+    "code": "be",
+    "text": "Belorussian"
+  },
+  {
+    "code": "bg",
+    "text": "Bulgarian"
+  },
+  {
+    "code": "bn",
+    "text": "Bengali"
+  },
+  {
+    "code": "bs",
+    "text": "Bosnian"
+  },
+  {
+    "code": "ca",
+    "text": "Catalan"
+  },
+  {
+    "code": "cs",
+    "text": "Czech"
+  },
+  {
+    "code": "da",
+    "text": "Danish"
+  },
+  {
+    "code": "de",
+    "text": "German"
+  },
+  {
+    "code": "dv",
+    "text": "Dhivehi"
+  },
+  {
+    "code": "en",
+    "text": "English"
+  },
+  {
+    "code": "es",
+    "text": "Spanish"
+  },
+  {
+    "code": "et",
+    "text": "Estonian"
+  },
+  {
+    "code": "eu",
+    "text": "Basque"
+  },
+  {
+    "code": "fa",
+    "text": "Persian"
+  },
+  {
+    "code": "fi",
+    "text": "Finnish"
+  },
+  {
+    "code": "fr",
+    "text": "French"
+  },
+  {
+    "code": "gl",
+    "text": "Galician"
+  },
+  {
+    "code": "el",
+    "text": "Greek"
+  },
+  {
+    "code": "ha",
+    "text": "Hausa"
+  },
+  {
+    "code": "he",
+    "text": "Hebrew"
+  },
+  {
+    "code": "hi",
+    "text": "Hindi"
+  },
+  {
+    "code": "hr",
+    "text": "Croatian"
+  },
+  {
+    "code": "hu",
+    "text": "Hungarian"
+  },
+  {
+    "code": "hy",
+    "text": "Armenian"
+  },
+  {
+    "code": "is",
+    "text": "Icelandic"
+  },
+  {
+    "code": "it",
+    "text": "Italian"
+  },
+  {
+    "code": "id",
+    "text": "Indonesian"
+  },
+  {
+    "code": "ja",
+    "text": "Japanese"
+  },
+  {
+    "code": "ka",
+    "text": "Georgian"
+  },
+  {
+    "code": "kk",
+    "text": "Kazakh"
+  },
+  {
+    "code": "kk",
+    "text": "Khmer"
+  },
+  {
+    "code": "ko",
+    "text": "Korean"
+  },
+  {
+    "code": "ku",
+    "text": "Kurdish"
+  },
+  {
+    "code": "ky",
+    "text": "Kyrgyz"
+  },
+  {
+    "code": "lt",
+    "text": "Lithuanian"
+  },
+  {
+    "code": "lv",
+    "text": "Latvian"
+  },
+  {
+    "code": "mk",
+    "text": "Macedonian"
+  },
+  {
+    "code": "ml",
+    "text": "Malayalam"
+  },
+  {
+    "code": "mn",
+    "text": "Mongolian"
+  },
+  {
+    "code": "ms",
+    "text": "Malay"
+  },
+  {
+    "code": "nb",
+    "text": "Norwegian Bokmål"
+  },
+  {
+    "code": "nl",
+    "text": "Dutch"
+  },
+  {
+    "code": "nn",
+    "text": "Norwegian Nynorsk"
+  },
+  {
+    "code": "no",
+    "text": "Norwegian"
+  },
+  {
+    "code": "pl",
+    "text": "Polish"
+  },
+  {
+    "code": "ps",
+    "text": "Pashto"
+  },
+  {
+    "code": "pt",
+    "text": "Portuguese"
+  },
+  {
+    "code": "ro",
+    "text": "Romanian"
+  },
+  {
+    "code": "ru",
+    "text": "Russian"
+  },
+  {
+    "code": "sd",
+    "text": "Sindhi"
+  },
+  {
+    "code": "sk",
+    "text": "Slovak"
+  },
+  {
+    "code": "sl",
+    "text": "Slovene"
+  },
+  {
+    "code": "so",
+    "text": "Somali"
+  },
+  {
+    "code": "sq",
+    "text": "Albanian"
+  },
+  {
+    "code": "sr",
+    "text": "Serbian"
+  },
+  {
+    "code": "sv",
+    "text": "Swedish"
+  },
+  {
+    "code": "sw",
+    "text": "Swahili"
+  },
+  {
+    "code": "ta",
+    "text": "Tamil"
+  },
+  {
+    "code": "tg",
+    "text": "Tajik"
+  },
+  {
+    "code": "th",
+    "text": "Thai"
+  },
+  {
+    "code": "tr",
+    "text": "Turkish"
+  },
+  {
+    "code": "tt",
+    "text": "Tatar"
+  },
+  {
+    "code": "ug",
+    "text": "Uyghur"
+  },
+  {
+    "code": "uk",
+    "text": "Ukrainian"
+  },
+  {
+    "code": "ur",
+    "text": "Urdu"
+  },
+  {
+    "code": "uz",
+    "text": "Uzbek"
+  },
+  {
+    "code": "zh",
+    "text": "Chinese"
+  },
+  {
+    "code": "vi",
+    "text": "Vietnamese"
+  }
+]

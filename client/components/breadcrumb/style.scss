@@ -1,0 +1,13 @@
+.componentBreadcrumb {
+  .breadcrumb-item {
+    &.active {
+      color: #000 !important;
+    }
+
+    &::before {
+      color: #000 !important;
+    }
+  }
+
+
+}

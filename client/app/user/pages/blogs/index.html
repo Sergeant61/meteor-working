@@ -1,0 +1,36 @@
+<template name="userPageBlogs">
+
+  {{#let _blogs=(state.get 'blogs')}}
+    <div class="userPageBlogs container">
+
+      <div class="row">
+        <div class="col-sm-12 mb-3">
+          <a href="{{pathFor 'user.blogCreate'}}" class="btn btn-primary float-end">Create Blog</a>
+        </div>
+
+
+        {{#each _blogs}}
+          <div class="col-sm-12 col-md-6 col-lg-4 mb-3">
+            <div class="card">
+
+              <!-- <img src="..." class="card-img-top" alt="..."> -->
+
+              <div class="card-body">
+                <h5 class="card-title">{{data.title}}</h5>
+                <p class="card-text">{{data.description}}</p>
+              </div>
+
+              <div class="card-footer">
+                <small class="text-muted"> {{#if updatedAt}} {{formatDateTime updatedAt}} {{else}} {{formatDateTime createdAt}} {{/if}}</small>
+                <a href="/blog/{{_id}}" class="brn btn-primary btn-sm float-end">Go</a>
+              </div>
+
+            </div>
+          </div>
+        {{/each}}
+
+      </div>
+
+    </div>
+  {{/let}}
+</template>

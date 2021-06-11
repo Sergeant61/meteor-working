@@ -1,0 +1,66 @@
+<template name="userPageBlogCreate">
+
+  <div class="userPageBlogCreate container">
+
+    <div class="row brd-loading-section">
+      <div class="col-sm-12 mb-3">
+        <div class="d-flex align-items-center">
+          <div class="d-flex flex-column">
+            <h1 class="fw-bolder display-5">Create new blog</h1>
+            <p class="mb-0">Edit and share new blog content.</p>
+          </div>
+
+          <div class="ms-auto">
+            <button type="submit" form="brdBlogCreate" class="btn btn-primary float-end">Publish blog</button>
+          </div>
+        </div>
+      </div>
+
+      <form id="brdBlogCreate" class="col-sm-12 col-lg-4 mb-3">
+        <p>Blog contents</p>
+
+        <div class="form-floating">
+          <input type="text" class="form-control brd-border-bottom-unset" id="title" placeholder="title">
+          <label for="title">Title</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control brd-border-top-unset" id="description" placeholder="description">
+          <label for="description">Description</label>
+        </div>
+
+        <br>
+        <p>Select category</p>
+
+        {{> userComponentCategorySelect}}
+
+        <br>
+        <p>Seo content</p>
+
+        <div class="form-floating">
+          <input type="text" class="form-control brd-border-bottom-unset" id="seoTitle" placeholder="seoTitle">
+          <label for="seoTitle">Title</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control brd-border-top-unset brd-border-bottom-unset" id="seoDescription" placeholder="seoDescription">
+          <label for="seoDescription">Description</label>
+        </div>
+        <div class="form-floating">
+          <input type="text" class="form-control brd-border-top-unset" id="seoKeywords" placeholder="seoKeywords">
+          <label for="seoKeywords">Keywords</label>
+        </div>
+      </form>
+
+      <div class="col-sm-12 col-lg-8 mb-3">
+        <div class="d-flex justify-content-between mb-2 align-items-center">
+          <span>Content</span>
+          <div class="ms-auto d-flex">
+            {{> userComponentLanguageSelect}}
+          </div>
+        </div>
+        <div id="brdBlogHtml"></div>
+      </div>
+
+    </div>
+  </div>
+
+</template>

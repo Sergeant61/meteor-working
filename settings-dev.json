@@ -1,0 +1,11 @@
+{
+  "rootUrl": "http://rec.bordo.io:4000",
+
+  "slack":{
+    "webhookUrl":""
+  },
+
+  "email": {
+    "from": "Glance Capital <hello@glancecapital.com>"
+  }
+}

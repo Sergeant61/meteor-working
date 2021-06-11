@@ -1,0 +1,31 @@
+{
+  "name": "nevan-yemek-app",
+  "private": true,
+  "scripts": {
+    "start": "meteor --settings settings-local.json --port 3000",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.11.2",
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "@popperjs/core": "^2.6.0",
+    "array-query": "^0.1.2",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^5.0.0-beta3",
+    "jose": "^2.0.3",
+    "jquery": "3.6.0",
+    "later": "^1.2.0",
+    "lightpick": "^1.6.2",
+    "meteor-node-stubs": "^1.0.1",
+    "moment": "^2.29.1",
+    "plaid": "^8.1.3",
+    "popper.js": "^1.16.1",
+    "quill": "^1.3.6",
+    "simpl-schema": "^1.10.2",
+    "slugify": "^1.4.6",
+    "sweetalert2": "^10.13.0"
+  }
+}

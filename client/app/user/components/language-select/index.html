@@ -1,0 +1,19 @@
+<template name="userComponentLanguageSelect">
+  {{#let _code=(state.get 'code') }}
+    <div class="dropdown bg-white userComponentLanguageSelect">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{#each languages}}
+          {{#if eq _code code}}
+            <span><span class="flag-icon flag-icon-{{code}} me-2"></span>{{text}}</span>
+          {{/if}}
+        {{/each}}
+      </a>
+      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        {{#each languages}}
+          <a class="dropdown-item brd-select-language" data-code="{{code}}" href="#"><span class="flag-icon flag-icon-{{code}} me-2"></span>{{text}}</a>
+        {{/each}}
+      </div>
+    </div>
+  {{/let}}
+
+</template>

@@ -1,0 +1,25 @@
+<template name="adminLayoutDefault">
+  <div class="adminLayoutDefault layout">
+    <nav id="sidebar" class="bg-white">
+      <div class="text-center py-5">
+        <a href="/" data-cy="brd-test-logo">
+          <img src="/assets/images/logo.svg" class="brd-admin-logo">
+        </a>
+      </div>
+
+      <ul class="list-group px-3">
+        <a data-cy="brd-test-dashboard" href="/admin/dashboard" class="list-group-item border-0 my-1 rounded-3 fw-bold {{#if isActive 'dashboard'}}text-white bg-primary{{else}}text-black-50{{/if}}"><i class="far fa-chart-line fa-fw me-2"></i> Gösterge Paneli</a>
+        <a data-cy="brd-test-log-out" href="#" class="list-group-item border-0 my-1 rounded-3 fw-bold text-black-50 brd-log-out"><i class="far fa-sign-out fa-fw me-2"></i> Çıkış</a>
+      </ul>
+
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content">
+      <div class="pageReactive">
+        {{> Template.dynamic template=page}}
+      </div>
+    </div>
+  </div>
+  {{> Loading}}
+</template>

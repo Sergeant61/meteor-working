@@ -1,0 +1,24 @@
+<template name="componentI18nSelector">
+
+  <div class="dropdown bg-white">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {{#with currentLocale.get}}
+        {{#if eq this 'tr-TR'}}
+          <span><span class="flag-icon flag-icon-tr me-2"></span> Türkçe</span>
+        {{/if}}
+
+        {{#if eq this 'en-US'}}
+          <span><span class="flag-icon flag-icon-gb  me-2"></span> English</span>
+        {{/if}}
+      {{/with}}
+
+    </a>
+    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item brd-language" data-code="en-US" href="#"><span class="flag-icon flag-icon-gb"></span>
+        English</a>
+      <a class="dropdown-item brd-language" data-code="tr-TR" href="#"><span class="flag-icon flag-icon-tr"></span>
+        Türkçe</a>
+    </div>
+  </div>
+
+</template>

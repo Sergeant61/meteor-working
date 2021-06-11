@@ -1,0 +1,7 @@
+.userPageBlogCreate {
+  @import url("/imports/js/ckeditor/styles.scss");
+
+  .ck-editor__editable_inline {
+    min-height: 300px;
+  }
+}

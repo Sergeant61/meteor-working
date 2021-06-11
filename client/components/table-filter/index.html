@@ -1,0 +1,56 @@
+<template name="componentsTableFilter">
+  <div class="btn-group componentsTableFilter" id="tableFilter{{id}}">
+    <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+      Filter
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end p-2" style="min-width: 320px;" aria-labelledby="tableFilter">
+      <form>
+        {{#each ./filteringData.get}}
+
+          {{#if eq type 'select-box'}}
+            <div class="form-floating mb-2">
+              <select class="form-select" id="brd_{{../id}}_{{filterKey}}" name="brd_{{filterKey}}">
+                <option selected value="-1">{{_ 'components.tableFilter' 'all'}}</option>
+                {{#each allowedValues}}
+                  {{#if isSelected ../filterKey key}}
+                    <option selected value="{{key}}">{{text}}</option>
+                  {{else}}
+                    <option value="{{key}}">{{text}}</option>
+                  {{/if}}
+                {{/each}}
+              </select>
+              <label for="brd_{{../id}}_{{filterKey}}">{{filterText}}</label>
+            </div>
+          {{/if}}
+
+          {{#if eq type 'data-range'}}
+            <div class="form-floating mb-2">
+              <input type="text" class="form-control" id="brd_{{../id}}_{{filterKey}}" name="brd_{{../id}}_{{filterKey}}" placeholder="{{filterText}}" autocomplete="off" />
+              <label for="brd_{{../id}}_{{filterKey}}">{{filterText}}</label>
+            </div>
+          {{/if}}
+
+          {{#if eq type 'number-range'}}
+            <div class="row">
+              <div class="col-6">
+                <div class="form-floating mb-2">
+                  <input type="number" step="0.01" class="form-control" id="brd_start_{{../id}}_{{filterKey}}" name="brd_start_{{../id}}_{{filterKey}}" placeholder="{{filterText}}" value="{{numberIsSelectedStart filterKey}}" autocomplete="off" />
+                  <label for="brd_start_{{../id}}_{{filterKey}}">{{filterText}} {{_ 'components.tableFilter' 'start'}}</label>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="form-floating mb-2">
+                  <input type="number" step="0.01" class="form-control" id="brd_end_{{../id}}_{{filterKey}}" name="brd_end_{{../id}}_{{filterKey}}" placeholder="{{filterText}}" value="{{numberIsSelectedEnd filterKey}}" autocomplete="off" />
+                  <label for="brd_end_{{../id}}_{{filterKey}}">{{filterText}} {{_ 'components.tableFilter' 'end'}}</label>
+                </div>
+              </div>
+            </div>
+          {{/if}}
+
+        {{/each}}
+        <button type="submit" class="btn btn-primary w-100"> {{_ 'components.tableFilter' 'filter'}} </button>
+      </form>
+    </ul>
+  </div>
+</template>

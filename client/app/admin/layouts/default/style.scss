@@ -1,0 +1,118 @@
+.adminLayoutDefault {
+  display: flex;
+  width: 100%;
+
+  #sidebar {
+    width: 270px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    z-index: 999;
+    transition: all 0.3s;
+    border-right: 1px solid #ebebeb;
+
+    ul {
+      overflow: auto;
+      height: calc(100% - 142px);
+    }
+  }
+
+  #sidebar.active {
+    margin-left: -270px;
+  }
+
+  /* ---------------------------------------------------
+      CONTENT STYLE
+  ----------------------------------------------------- */
+
+  #content {
+    width: calc(100% - 270px);
+    height: 100vh;
+    transition: all 0.3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    .pageReactive {
+      overflow-y: scroll;
+      height: 100%;
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .pageReactive::-webkit-scrollbar {
+      display: none;
+    }
+
+    .pageReactive {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+
+  #content.active {
+    width: 100%;
+  }
+
+  /* ---------------------------------------------------
+      MEDIAQUERIES
+  ----------------------------------------------------- */
+
+  @media (max-width: 993px) {
+    #sidebar {
+      margin-left: -270px;
+    }
+    #sidebar.active {
+      margin-left: 0;
+    }
+    #content {
+      width: 100%;
+    }
+    #content.active {
+      width: calc(100% - 270px);
+    }
+  }
+
+  // *---------
+
+  .brd-admin-logo {
+    max-width: 145px;
+  }
+
+  .brd-card {
+    border-radius: 1.3rem;
+  }
+
+  .table {
+    thead {
+      tr {
+        th:first-child {
+          border-top-left-radius: 0.6rem !important;
+          border-bottom-left-radius: 0.6rem !important;
+        }
+
+        th:last-child {
+          border-top-right-radius: 0.6rem !important;
+          border-bottom-right-radius: 0.6rem !important;
+        }
+      }
+    }
+  }
+  .nav-tabs .nav-link.active,
+  .nav-tabs .nav-item.show .nav-link {
+    color: var(--dark);
+    background-color: #fff;
+    border-color: var(--bs-primary);
+  }
+  .nav-tabs .nav-link {
+    margin-bottom: -1px;
+    border: 1px solid transparent;
+    border-left: 0.25rem;
+    border-right: 0.25rem;
+    border-top: 0.25rem;
+  }
+  .brd-square {
+    width: 34px;
+    height: 34px;
+  }
+}

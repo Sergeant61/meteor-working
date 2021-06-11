@@ -1,0 +1,26 @@
+<template name="adminComponentNavbar">
+
+  <div class="d-flex py-5 px-3 w-100 align-items-center">
+    <div>
+      <button class="btn btn-primary" type="button" id="sidebarCollapse">
+        <i class="fas fa-align-left"></i>
+      </button>
+    </div>
+    <div class="ps-3">
+      <p class="fs-1 mb-0">{{ title }}</p>
+      <p class="text-muted mt-0">
+        {{ description }}
+      </p>
+    </div>
+    <div class="d-flex ms-auto">
+      <div class="pe-2 my-auto">
+        <img src="/assets/images/user.svg" class="img-fluid">
+      </div>
+      <div class="my-auto small lh-sm">
+        <span class="fw-bold">{{currentUser.profile.fullname}}</span> <br>
+        <span class="text-muted">{{_ 'admin.components.navbar' 'accountType'}}</span>
+      </div>
+    </div>
+  </div>
+
+</template>

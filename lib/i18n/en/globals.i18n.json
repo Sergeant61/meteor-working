@@ -1,0 +1,19 @@
+{
+  "_locale": "en",
+  "_namespace": "globals",
+
+  "ok": "OK",
+  "yes": "Yes",
+  "no": "No",
+
+  "swal": {
+    "verifyTitle": "Your user account not verified!",
+    "sendVerification": "Resend verification e-mail",
+    "verificationSentTitle": "Sent!",
+    "verificationSentDescription": "Verification e-mail sent!",
+
+    "errorTitle": "Oi!",
+    "successful": "Successful",
+    "information": "Information"
+  }
+}

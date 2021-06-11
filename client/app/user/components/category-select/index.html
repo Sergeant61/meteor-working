@@ -1,0 +1,24 @@
+<template name="userComponentCategorySelect">
+  <div class="userComponentCategorySelect mb-2">
+
+    {{#let _categories=(state.get 'categories') _categoryId=(state.get 'categoryId')}}
+
+      {{#with _categories}}
+        <div class="form-floating">
+          <select class="form-select brd-categories" id="floatingSelect">
+            <option disabled>Select Category</option>
+            {{#each this}}
+              <option value="{{_id}}">{{data.title}}</option>
+            {{/each}}
+          </select>
+          <label for="floatingSelect">Works with selects</label>
+        </div>
+      {{/with}}
+
+      {{#if _categoryId}}
+        {{> userComponentCategorySelect parentId=_categoryId}}
+      {{/if}}
+    {{/let}}
+
+  </div>
+</template>

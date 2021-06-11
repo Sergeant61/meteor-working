@@ -1,0 +1,27 @@
+<template name="componentPagination">
+  {{#let _pageCount=(state.get 'pageCount')}}
+    {{#if gt _pageCount 1}}
+      <ul class="pagination pagination-sm justify-content-center mb-0 mt-3">
+        <li class="page-item">
+          <a class="page-link brd-previous" data-cy="brd-test-pagination-previous" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+
+        {{#let _currentPage=(paginationState.get 'currentPage')}}
+          {{#each state.get 'pages'}}
+            <li class="page-item {{#if eq _currentPage value}}active{{/if}}"><a data-cy="brd-test-pagination-{{value}}" style="width: 35px;" class="page-link brd-page text-center" href="#">{{text}}</a></li>
+          {{/each}}
+        {{/let}}
+
+        <li class="page-item">
+          <a class="page-link brd-next" data-cy="brd-test-pagination-next" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+    {{/if}}
+  {{/let}}
+</template>
