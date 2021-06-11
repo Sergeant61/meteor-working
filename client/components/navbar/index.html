@@ -10,14 +10,13 @@
         </div>
         <div class="col-4 d-flex justify-content-end align-items-center">
           {{> componentI18nSelector}}
-          <a class="link-secondary me-2" href="#" aria-label="Search">
-            <i class="fas fa-search"></i>
-          </a>
+
           {{#if currentUser}}
             <a class="btn btn-sm btn-outline-secondary" href="/user/profile">My profile</a>
           {{else}}
             <a class="btn btn-sm btn-outline-secondary" href="/auth/sign-in">Sign in</a>
           {{/if}}
+          
         </div>
       </div>
     </header>

@@ -2,7 +2,7 @@ import { UserStatus } from 'meteor/mizzao:user-status';
 
 Accounts.onCreateUser(function (options, user) {
   user.profile = options.profile || {};
-  user.profile.status = 'lead';
+  user.profile.status = 'active';
   user.profile.isAdmin = false;
 
   return user;
