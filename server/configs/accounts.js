@@ -8,7 +8,7 @@ Accounts.onCreateUser(function (options, user) {
   return user;
 });
 
-Accounts.emailTemplates.from = Meteor.settings.email.from;
+Accounts.emailTemplates.from = Meteor.settings?.email?.from || '';
 
 UserStatus.events.on('connectionLogin', function (fields) {
   fields.type = 'login';

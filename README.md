@@ -1,1 +1,1 @@
-Bu proje Meteor.js ile yazıldı.
+Bu proje Meteor.js eğitimlerinde kullanılmak için hazırlanmıştır.

@@ -7,7 +7,7 @@ ActionSendNotification = function (texts) {
   }
 
   const payload = {
-    username: 'Glance Capital Bot',
+    username: 'App Bot',
     text: texts.join('\n>'),
     icon_url:  `${rootUrl}/assets/images/slack-logo.png` 
   }

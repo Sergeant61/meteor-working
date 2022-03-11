@@ -7,10 +7,10 @@ Migrations.add({
     Roles.createRole('roles.personnel');
 
     const userId = Accounts.createUser({
-      email: 'admin@nevan.com',
-      password: '123',
+      email: 'admin@bordo.io',
+      password: '123123',
       profile: {
-        name: 'Nevan',
+        name: 'Bordo',
         lastName: 'Admin'
       }
     });
