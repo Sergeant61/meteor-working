@@ -1,3 +1,7 @@
 {
-  "rootUrl": "http://localhost:5000"
+  "rootUrl": "http://localhost:5000",
+
+  "public":{
+
+  }
 }

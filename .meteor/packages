@@ -35,6 +35,7 @@ email@2.2.0
 meteorhacks:ssr
 meteorhacks:picker
 dburles:collection-helpers
+reywood:publish-composite
 littledata:synced-cron
 easy:search
 momentjs:moment

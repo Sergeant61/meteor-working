@@ -1,0 +1,57 @@
+<template name="publicPageChat">
+
+  {{#let _rooms=(state.get 'rooms') _room=(state.get 'room')}}
+
+
+    <div class="row">
+      <div class="col-md-4">
+        <h4 class="fw-bold">Rooms</h4>
+
+        <form id="brdRoomCreateForm" class="d-flex gap-2 flex-fill mb-2">
+          <input class="form-control" name="name" type="text" placeholder="Room name">
+          <button type="submit" class="btn btn-primary">Save</button>
+        </form>
+
+        <ul class="list-group">
+          {{#each _rooms}}
+            <li class="list-group-item {{#if eq _id _room._id}}active{{/if}}"> <a data-id="{{_id}}" href="#" class="brd-room-select text-dark">{{name}}</a> </li>
+          {{/each}}
+        </ul>
+
+      </div>
+
+      <div class="col-md-8">
+        <h4 class="fw-bold">Messages</h4>
+
+        {{#if _room}}
+          <div class="card h-100">
+            <div class="card-header">
+              <h6>{{_room.name}}</h6>
+            </div>
+            <div class="card-body">
+
+              <ul class="list-group">
+                {{#each messages}}
+                  <li class="list-group-item mb-2">{{message}}</li>
+                {{/each}}
+              </ul>
+
+            </div>
+            <div class="card-footer">
+              <form id="brdMessageCreateForm" class="d-flex gap-2 flex-fill mb-2">
+                <input class="form-control" name="message" type="text" placeholder="Message">
+                <button type="submit" class="btn btn-primary">Send</button>
+              </form>
+            </div>
+          </div>
+        {{else}}
+          <p class="text-center py-4">Seçili oda yok</p>
+        {{/if}}
+
+      </div>
+    </div>
+
+
+  {{/let}}
+
+</template>

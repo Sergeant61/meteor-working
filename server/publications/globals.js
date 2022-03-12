@@ -5,3 +5,7 @@ Meteor.publish(null, function () {
     this.ready()
   }
 });
+
+Meteor.publish('chat.messages', function (roomId) {
+  return Messages.find({ roomId: roomId });
+});

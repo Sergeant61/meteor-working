@@ -1,0 +1,30 @@
+<template name="publicPageAbout">
+
+  {{#let _count=count.get}}
+    <div class="container">
+      {{_count}}
+
+      {{#if gt _count 5}}
+        var
+      {{else}}
+        yok
+      {{/if}}
+
+      <ul>
+        {{#each cars}}
+          <li>{{id}} {{name}} {{../year}}</li>
+        {{/each}}
+      </ul>
+
+      {{#with _count}}
+        {{this}} -
+        {{../year}}
+      {{/with}}
+
+      <button class="btn btn-primary brd-add">add</button>
+      <button class="btn btn-primary brd-remove">remove</button>
+    </div>
+  {{/let}}
+
+
+</template>
