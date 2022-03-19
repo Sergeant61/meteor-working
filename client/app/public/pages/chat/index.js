@@ -3,6 +3,8 @@ Template.publicPageChat.onCreated(function () {
     rooms: [],
     room: null
   });
+
+  this.recep = 'recep'
 });
 
 Template.publicPageChat.onRendered(function () {
@@ -17,6 +19,7 @@ Template.publicPageChat.onRendered(function () {
 
     console.log(room);
     self.messageSub = Meteor.subscribe('chat.messages', room._id);
+    console.log(self.messageSub);
   })
 
   this.autorun(function () {
@@ -35,9 +38,16 @@ Template.publicPageChat.onRendered(function () {
   });
 });
 
+Template.publicPageChat.onDestroyed(function () { 
+   
+});
+
 Template.publicPageChat.helpers({
   messages: function() {
     return Messages.find({}).fetch();
+  },
+  recep1: function() {
+    return Template.instance().recep;
   }
 });
 
@@ -92,6 +102,7 @@ Template.publicPageChat.events({
 
   'click .brd-room-select': function (event, template) {
     event.preventDefault();
+    console.log(event.target);
     console.log(event.target.dataset);
     console.log(this);
     template.state.set('room', this);
